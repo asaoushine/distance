@@ -1,0 +1,12 @@
+<h1>Showページ</h1>
+
+<p><%= @user.name %></p>
+
+<% if @okans.any? %>
+  <%= @okans.each do |okan| %>
+    <p>おかんは近くにいます</p>
+    <p><%= okan.name %></p>
+  <% end %>
+<% else %>
+  <p>おかんは近くにいませんでした</p>
+<% end %>

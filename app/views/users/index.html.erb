@@ -1,0 +1,8 @@
+<h1>ユーザー一覧</h1>
+
+<%= link_to 'ユーザー作成', new_user_path %>
+
+<%= @users.each do |user| %>
+  <p><%= link_to user.name, user_path(user) %></p>
+  <%= debug user%>
+<% end %>

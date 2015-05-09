@@ -1,0 +1,14 @@
+<h1>新規ユーザー</h1>
+
+<%= form_for @user do |f| %>
+  <p>
+    <%= f.label '名前' %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label '住所' %>
+    <%= f.text_field :address %>
+  </p>
+  
+  <%= f.submit '保存する' %>
+<% end %>
